@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['-', 'gap-pattern - v1 2024-02-26 7-57pm', 'object']
+
+roboflow:
+  workspace: starter-3re5h
+  project: gap-detection-os0yg
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/starter-3re5h/gap-detection-os0yg/dataset/2
