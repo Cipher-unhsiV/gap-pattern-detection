@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Gap Down', 'Gap Up']
+
+roboflow:
+  workspace: starter-3re5h
+  project: gap-pattern-kjvnx
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/starter-3re5h/gap-pattern-kjvnx/dataset/2
