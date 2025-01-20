@@ -1,4 +1,4 @@
-# CURRENT REQUIREMENT FOR TPTY - P0
+# CURRENT REQUIREMENT - P0
 ## PROGRESS
 - Roboflow dataset (Original) - [link](https://universe.roboflow.com/workathon/gap-pattern)
 - Dataset (Custom Augmented) - [link](https://universe.roboflow.com/starter-3re5h/gap-pattern-kjvnx)
