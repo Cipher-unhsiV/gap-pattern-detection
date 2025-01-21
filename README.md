@@ -7,3 +7,4 @@
   - Annotate Manually
   - Populate the dataset to 1000+
   - Accuracy low (suspect: low data samples)
+- Version 2 trial with 350 training samples and 50 validation samples (Manual Annotation with Augmentation)
