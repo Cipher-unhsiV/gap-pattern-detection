@@ -14,3 +14,10 @@
   - Shifting from (96,9,5) split to (900,43,5) split has shown improved results. (train, valid, test)
   - 'mAP50' has increased by around 82 times and 'mAP50-95' has increased by around 148 times.
 - Version 3 trial with more data samples, yolo11l and 25e:100e
+  - Tested with 1374 training samples and split being 1374,50,0.
+  - yolo11x seemed to be too complex for this task and was easily overfitting - so neglected!
+  - yolo11l seemed comparatively better that yolo11x with decent results.
+- **Version 3 is the best possible saturation with yolo via cli. Trying pythonic way may (or may not) give better control over arguments that could pave way to enhanced results.**
+
+## SUMMARY
+![Image](https://github.com/user-attachments/assets/8e593355-96e1-499a-99ee-d8ff2bb58c7f)
