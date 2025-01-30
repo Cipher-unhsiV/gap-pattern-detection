@@ -28,17 +28,19 @@
    - [Running the Project](#running-the-project)
 5. [Try It Online](#try-it-online)
 6. [Dataset](#dataset)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Acknowledgments](#acknowledgments)
+7. [Technologies Involved](#technologies-involved)
+8. [Successor Note](#successor-note)
+9. [Contributing](#contributing)
+10. [License](#license)
+11. [Acknowledgments](#acknowledgments)
 
 ---
 
 ## **Project Overview**
 
-This project focuses on detecting GAP UP and GAP DOWN patterns in candlestick charts, which are widely used in technical analysis for stock market trading. Using a YOLOv11l (You Only Look Once) object detection model, the project identifies these patterns in candlestick chart images. The model is trained on a custom dataset and can be used to analyze charts for potential market movements.
+This project focuses on detecting **GAP UP** and **GAP DOWN** patterns in **candlestick charts**, which are widely used in technical analysis for stock market trading. Using a **YOLOv11l** (You Only Look Once) object detection model, the project identifies these patterns in candlestick chart images. The model is trained on a custom dataset and can be used to analyze charts for potential market movements.
 
-It is designed to help traders and analysts quickly identify GAP patterns, saving time and improving accuracy in technical analysis. It includes a Gradio-based web interface for easy interaction and real-time detection.
+It is designed to help traders and analysts quickly identify GAP patterns, saving time and improving accuracy in technical analysis. It includes a **Gradio-based web interface** for easy interaction and real-time detection.
 
 ---
 
@@ -119,12 +121,20 @@ The dataset includes:
 - Annotated images of candlestick charts.
 - Labels for GAP UP and GAP DOWN patterns.
 
-## Technologies
+## Technologies Involved
 
-- YOLOv11l: For object detection.
-- Gradio: For creating a user-friendly web interface.
-- OpenCV (cv2): For image processing and annotation.
-- Roboflow: For dataset management and annotation.
+- **YOLOv11l**: For object detection.
+- **Gradio**: For creating a user-friendly web interface.
+- **OpenCV (cv2)**: For image processing and annotation.
+- **Roboflow**: For dataset management and annotation.
+
+## Successor Note 
+We’re excited to announce that **Version 2** of this project is currently in development! While we can’t reveal all the details just yet, here’s a sneak peek at what’s coming:
+- **Real-Time Market Insights**: Version 2 will take GAP pattern detection to the next level by integrating live market data. Imagine detecting GAP patterns as they form, in real-time!
+- **Enhanced User Experience**: A more dynamic and interactive interface that adapts to real-time changes in the market.
+- **Advanced Analytics**: New features to help you gain deeper insights into market trends and patterns.
+
+Stay tuned for updates as we work on bringing these exciting new features to life. _The future of GAP pattern detection is just around the corner!_
 
 ## Contributing
 We welcome contributions to improve the model, dataset, or interface. Here’s how you can contribute:
