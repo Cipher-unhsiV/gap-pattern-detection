@@ -4,6 +4,14 @@
 *Automating the detection of GAP UP and GAP DOWN patterns in candlestick charts using YOLO object detection.*
 
 ---
+<p align="center">
+<a href="https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection">
+    <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
+</a>
+<a href="https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection/model/">
+    <img src="https://app.roboflow.com/images/try-model-badge.svg"></img>
+</a>
+</p>
 
 ## **Table of Contents**
 1. [Project Overview](#project-overview)
@@ -27,10 +35,10 @@
 ---
 
 ## **Project Overview**
-This project aims to automate the detection of **GAP UP** and **GAP DOWN** patterns in **candlestick charts**, which are widely used in technical analysis for stock market trading. Using a **YOLO (You Only Look Once)** object detection model, the project identifies these patterns in candlestick chart images. The model is trained on a custom dataset and can be used to analyze charts for potential market movements.
 
-The project is designed to help traders and analysts quickly identify GAP patterns, saving time and improving accuracy in technical analysis.
+This project focuses on detecting GAP UP and GAP DOWN patterns in candlestick charts, which are widely used in technical analysis for stock market trading. Using a YOLOv11l (You Only Look Once) object detection model, the project identifies these patterns in candlestick chart images. The model is trained on a custom dataset and can be used to analyze charts for potential market movements.
 
+It is designed to help traders and analysts quickly identify GAP patterns, saving time and improving accuracy in technical analysis. It includes a Gradio-based web interface for easy interaction and real-time detection.
 ---
 
 ## **Key Concepts**
@@ -42,7 +50,7 @@ Candlestick charts are a type of financial chart used to represent the price mov
 
 Candlestick charts are widely used in technical analysis to identify trends, reversals, and patterns.
 
----
+
 
 ### **GAP UP and GAP DOWN**
 - **GAP UP**: Occurs when the **lowest price of the current candlestick is higher than the highest price of the previous candlestick**. This indicates a strong upward momentum and is often considered a bullish signal.
@@ -55,9 +63,9 @@ These patterns are significant because they can signal potential breakouts or re
 ## **Project Details**
 
 ### **How It Works**
-1. **Input**: An image of a candlestick chart is provided as input.
-2. **Detection**: The YOLO model processes the image to detect GAP UP and GAP DOWN patterns.
-3. **Output**: An annotated image with detected patterns highlighted.
+1. **Input**: The user uploads an image of a candlestick chart or interacts with the Gradio interface.
+2. **Detection**: The YOLOv11l model processes the image to detect GAP UP and GAP DOWN patterns.
+3. **Output**: An annotated image with detected patterns highlighted, along with counts of GAP UP and GAP DOWN patterns.
 
 ### **Class Types**
 The YOLO model is trained to detect two classes:
@@ -91,11 +99,11 @@ To run this project locally, you need:
    ```
 
 ### **Running the Project**
-1. Download the trained model weights (best.pt) from the Roboflow dataset page and place it in the models directory.
-2. Run the detection script:
-```bash
-python detect.py --source path/to/your/image.jpg
-```
+1. Download the trained model weights (```best.pt```) from the [Roboflow dataset page](https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection) and place it in the ```models``` directory.
+2. Run the Gradio interface:
+   ```bash
+   python app.py
+   ```
 3. The output will be saved as output_image.jpg in the results directory.
 
 ## Try It Online
@@ -110,32 +118,39 @@ The dataset includes:
 - Annotated images of candlestick charts.
 - Labels for GAP UP and GAP DOWN patterns.
 
-### Contributing
+## Technologies
+
+- YOLOv11l: For object detection.
+- Gradio: For creating a user-friendly web interface.
+- OpenCV (cv2): For image processing and annotation.
+- Roboflow: For dataset management and annotation.
+
+## Contributing
 We welcome contributions to improve the model, dataset, or interface. Here’s how you can contribute:
 
-1. Fork the repository:
+1. Fork the repository and clone it:
 
-bash```
-git clone https://github.com/your-username/gap-pattern-detection.git```
+   ```bash
+   git clone https://github.com/your-username/gap-pattern-detection.git```
 
 2. Create a new branch for your feature or bugfix:
 
-bash```
-git checkout -b feature/your-feature-name```
+   ```bash
+   git checkout -b feature/your-feature-name```
 
 3. Make your changes and commit them:
 
-bash```
-git commit -m "Add your message here"```
+   ```bash
+   git commit -m "Add your message here"```
 
 4. Push your changes to your fork:
 
-bash```
-git push origin feature/your-feature-name```
+   ```bash
+   git push origin feature/your-feature-name```
 
 5. Open a Pull Request on the main repository.
 
-### Labeling Guidelines
+## Labeling Guidelines
 
 If you’re labeling new data for the dataset, follow these guidelines:
 
@@ -145,20 +160,21 @@ If you’re labeling new data for the dataset, follow these guidelines:
   - Assign the correct class label (0 for GAP DOWN, 1 for GAP UP).
 - Ensure the bounding boxes are tight and accurate.
 
-### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Acknowledgments
-- Roboflow for providing the dataset and annotation tools.
-- Ultralytics for the YOLO object detection framework.
-- Hugging Face for the deployment platform.
+## Acknowledgments
+- [Roboflow](https://roboflow.com/) for providing the dataset and annotation tools.
+- [Ultralytics](https://www.ultralytics.com/) for the YOLO object detection framework.
+- [Gradio](https://www.gradio.app/) for the web interface framework.
+- [HF Spaces](https://huggingface.co/spaces) for the deployment platform.
 
-### Connect with Us
+## Connect
 
 - GitHub: [Cipher-unhsiV](https://github.com/Cipher-unhsiV)
 - Email: vishnuvasants@gmail.com
 - LinkedIn: [Vishnuvasan T S](https://www.linkedin.com/in/cipher-unhsiv)
 
-Happy Trading and Coding! 🚀
 
+<strong><p align="center">Happy Trading and Coding! 🚀</p></strong>
    
