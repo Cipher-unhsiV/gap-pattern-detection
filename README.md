@@ -39,6 +39,7 @@
 This project focuses on detecting GAP UP and GAP DOWN patterns in candlestick charts, which are widely used in technical analysis for stock market trading. Using a YOLOv11l (You Only Look Once) object detection model, the project identifies these patterns in candlestick chart images. The model is trained on a custom dataset and can be used to analyze charts for potential market movements.
 
 It is designed to help traders and analysts quickly identify GAP patterns, saving time and improving accuracy in technical analysis. It includes a Gradio-based web interface for easy interaction and real-time detection.
+
 ---
 
 ## **Key Concepts**
