@@ -1,0 +1,21 @@
+yolo:
+  task: detect
+  mode: train
+  model: yolo11l.pt
+  data: /path/to/file/data.yaml
+  epochs: 100
+  batch: 64
+  imgsz: 640
+  plots: True
+
+optimizer:
+  type: AdamW
+  lr: 0.001667
+  momentum: 0.9
+  weight_decay:
+    - { params: weight, decay: 0.0, count: 167 }
+    - { params: weight, decay: 0.0005, count: 174 }
+    - { params: bias, decay: 0.0, count: 173 }
+
+tensorboard:
+  model_graph: visualization added
