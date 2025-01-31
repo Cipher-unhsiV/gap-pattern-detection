@@ -4,6 +4,10 @@
 *Automating the detection of GAP UP and GAP DOWN patterns in candlestick charts using YOLO object detection.*
 
 ---
+
+<p align="center" id="demo"><a href="https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection" style="font-size:30px; font-weight:bold;"> Run Inference 🚀</a></p>
+
+
 <p align="center">
 <a href="https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection">
     <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
@@ -161,6 +165,8 @@ We welcome contributions to improve the model, dataset, or interface. Here’s h
 
 5. Open a Pull Request on the main repository.
 
+For more information, head to [CONTRIBUTING](CONTRIBUTING.md) file
+
 ## Labeling Guidelines
 
 If you’re labeling new data for the dataset, follow these guidelines:
@@ -186,6 +192,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Email: vishnuvasants@gmail.com
 - LinkedIn: [Vishnuvasan T S](https://www.linkedin.com/in/cipher-unhsiv)
 
+<p align="center">
+  <a href="#demo">💻 Live Demo</a>
+</p>
 
 <strong><p align="center">Happy Trading and Coding! 🚀</p></strong>
-   
