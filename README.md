@@ -1,11 +1,12 @@
-# **GAP Pattern Detection in Candlestick Charts**
+# **GAP Pattern Detection in Candlestick Charts**, [Run Inference 🚀](https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection)
 
 ![Project Banner](https://github.com/user-attachments/assets/dc0e5bc8-dae4-4ec6-9721-929ddc2c0460)  
 *Automating the detection of GAP UP and GAP DOWN patterns in candlestick charts using YOLO object detection.*
 
 ---
-
+<!--
 <p align="center" id="demo"><a href="https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection" style="font-size:30px; font-weight:bold;"> Run Inference 🚀</a></p>
+-->
 
 
 <p align="center">
