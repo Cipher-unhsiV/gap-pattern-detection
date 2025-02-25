@@ -1,4 +1,4 @@
-# **Contributing to GAP Pattern Detection**
+# **Contributing Guidelines**
 
 We welcome contributions from the community! Whether you're fixing a bug, adding a feature, or improving documentation, your help is greatly appreciated. This guide will walk you through the process of contributing to this project.
 
@@ -10,11 +10,10 @@ We welcome contributions from the community! Whether you're fixing a bug, adding
    - [Reporting Bugs](#reporting-bugs)
    - [Suggesting Enhancements](#suggesting-enhancements)
    - [Code Contributions](#code-contributions)
-3. [Setting Up the Development Environment](#setting-up-the-development-environment)
-4. [Pull Request Guidelines](#pull-request-guidelines)
-5. [Code Style and Standards](#code-style-and-standards)
-6. [Labeling Guidelines](#labeling-guidelines)
-7. [Community Guidelines](#community-guidelines)
+3. [Pull Request Guidelines](#pull-request-guidelines)
+4. [Code Style and Standards](#code-style-and-standards)
+5. [Labeling Guidelines](#labeling-guidelines)
+6. [Community Guidelines](#community-guidelines)
 
 ---
 
@@ -25,116 +24,75 @@ Before contributing, please:
    git clone https://github.com/your-username/gap-pattern-detection.git
    cd gap-pattern-detection
    ```
-Set up the development environment (see Setting Up the Development Environment).
+2. Set up the development environment (see Setting Up the Development Environment).
+3. Familiarize yourself with the project structure and codebase.
 
-Familiarize yourself with the project structure and codebase.
+## **How to Contribute**
 
-How to Contribute
-Reporting Bugs
+### Reporting Bugs
 If you find a bug, please:
+1. Check if the issue has already been reported in the Issues section.
+2. If not, open a new issue and provide:
+   - A clear and descriptive title.
+   - Steps to reproduce the bug.
+   - Expected vs. actual behavior.
+   - Screenshots or error logs (if applicable).
 
-Check if the issue has already been reported in the Issues section.
-
-If not, open a new issue and provide:
-
-A clear and descriptive title.
-
-Steps to reproduce the bug.
-
-Expected vs. actual behavior.
-
-Screenshots or error logs (if applicable).
-
-Suggesting Enhancements
+### Suggesting Enhancements
 If you have an idea for a new feature or improvement:
+1. Check if the enhancement has already been suggested.
+2. Open a new issue and describe:
+   - The problem or limitation you’re addressing.
+   - Your proposed solution.
+   - Any relevant examples or references.
 
-Check if the enhancement has already been suggested.
-
-Open a new issue and describe:
-
-The problem or limitation you’re addressing.
-
-Your proposed solution.
-
-Any relevant examples or references.
-
-Code Contributions
+### Code Contributions
 To contribute code:
+1. Create a new branch for your feature or bugfix:
 
-Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+2. Make your changes and test them thoroughly.
+3. Commit your changes with a clear and descriptive message:
 
-bash
-Copy
-git checkout -b feature/your-feature-name
-Make your changes and test them thoroughly.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push your changes to your fork:
 
-Commit your changes with a clear and descriptive message:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a **Pull Request (PR)** on the main repository.
 
-bash
-Copy
-git commit -m "Add your message here"
-Push your changes to your fork:
+## Pull Request Guidelines
 
-bash
-Copy
-git push origin feature/your-feature-name
-Open a Pull Request (PR) on the main repository. Follow the Pull Request Guidelines.
+- **Keep PRs Small**: Focus on one feature or bugfix per PR.
+- **Describe Your Changes**: Provide a clear description of what your PR does and why it’s needed.
+- **Include Tests**: If applicable, add tests to verify your changes.
+- **Update Documentation**: Ensure the README.md and other documentation are updated if your changes affect them.
 
-Setting Up the Development Environment
-Install Python 3.8 or higher.
+## Code Style and Standards
 
-Install the required dependencies:
+- Follow **PEP 8** guidelines for Python code.
+- Use descriptive variable and function names.
+- Add comments to explain complex logic.
 
-bash
-Copy
-pip install -r requirements.txt
-Download the trained model weights (best.pt) from the Roboflow dataset page and place it in the models directory.
+## Labeling Guidelines
 
-Run the project locally to ensure everything works:
+If you’re labeling new data for the dataset, follow these guidelines:
 
-bash
-Copy
-python app.py
-Pull Request Guidelines
-Keep PRs Small: Focus on one feature or bugfix per PR.
+- Use a labeling tool like LabelImg or CVAT.
+- For each GAP UP or GAP DOWN pattern:
+  - Draw a bounding box around the two candlesticks involved in the pattern.
+  - Assign the correct class label (0 for GAP DOWN, 1 for GAP UP).
+- Ensure the bounding boxes are tight and accurate.
 
-Describe Your Changes: Provide a clear description of what your PR does and why it’s needed.
+## Community Guidelines
 
-Include Tests: If applicable, add tests to verify your changes.
-
-Update Documentation: Ensure the README.md and other documentation are updated if your changes affect them.
-
-Code Style and Standards
-Follow PEP 8 guidelines for Python code.
-
-Use descriptive variable and function names.
-
-Add comments to explain complex logic.
-
-Format your code using Black or autopep8:
-
-bash
-Copy
-black .
-Labeling Guidelines
-If you’re contributing to the dataset or labeling new data:
-
-Use a labeling tool like LabelImg or CVAT.
-
-For each GAP UP or GAP DOWN pattern:
-
-Draw a bounding box around the two candlesticks involved in the pattern.
-
-Assign the correct class label (0 for GAP DOWN, 1 for GAP UP).
-
-Ensure the bounding boxes are tight and accurate.
-
-Community Guidelines
-Be respectful and inclusive.
-
-Provide constructive feedback.
-
-Follow the Code of Conduct.
+- Be respectful and inclusive.
+- Provide constructive feedback.
 
 Thank You!
 Your contributions help make this project better for everyone. We appreciate your time and effort! 🚀
