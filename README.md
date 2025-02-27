@@ -71,9 +71,11 @@ These patterns are significant because they can signal potential breakouts or re
 ## **Project Details**
 
 ### **How It Works**
-1. **Input**: The user uploads an image of a candlestick chart or interacts with the Gradio interface.
-2. **Detection**: The YOLOv11l model processes the image to detect GAP UP and GAP DOWN patterns.
-3. **Output**: An annotated image with detected patterns highlighted, along with counts of GAP UP and GAP DOWN patterns.
+1. **Input**: The user inputs a stock symbol through the Gradio interface.
+2. **Data Acquisition**: Fetches real-time stock data from Alpha Vantage.
+3. **Chart Generation**: Dynamically creates candlestick charts using Plotly.
+4. **Pattern Detection**: Applies the YOLOv11l model to identify GAP patterns.
+5. **Output**: An annotated image with detected patterns highlighted, along with counts of GAP UP and GAP DOWN patterns.
 
 ### **Class Types**
 The YOLO model is trained to detect two classes:
@@ -93,30 +95,39 @@ The YOLO model is trained to detect two classes:
 To run this project locally, you need:
 - Python 3.8 or higher
 - Pip (Python package manager)
+- Alpha Vantage API key
 - A GPU (recommended for faster inference)
 
 ### **Installation**
-1. Clone the repository:
+1. Fork the repository
+2. Clone the repository:
    ```bash
    git clone https://github.com/your-username/gap-pattern-detection.git
    cd gap-pattern-detection
    ```
-2. Install the required dependencies:
+3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
 ### **Running the Project**
-1. Download the trained model weights (```best.pt```) from the [Roboflow dataset page](https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection) and place it in the ```models``` directory.
-2. Run the Gradio interface:
+1. Set your Alpha Vantage API key:
+   ```bash
+   # Edit the API_KEY variable in app.py
+   API_KEY = "YOUR_API_KEY_HERE"
+   ```
+2. Download the trained model weights (```best.pt```) from the [Roboflow dataset page](https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection) and place it in the ```models``` directory.
+3. Launch the application:
    ```bash
    python app.py
    ```
-3. The output will be saved as output_image.jpg in the results directory.
+4. Open the Gradio interface in your browser (typically at [http://127.0.0.1:7860](http://127.0.0.1:7860))
+5. Enter a stock symbol (e.g., AAPL) and click "Detect Patterns"
 
 ## Try It Online
 You can try the project without installing anything locally by using the Hugging Face Spaces deployment:
-👉 [GAP Pattern Detection on Hugging Face](https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection)
+👉 [Version 1](https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection)
+👉 [Version 2](https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection-v2.0)
 
 ## Dataset
 The dataset used for training the model is publicly available on Roboflow. You can access it here:
@@ -132,12 +143,24 @@ The dataset includes:
 - **Gradio**: For creating a user-friendly web interface.
 - **OpenCV (cv2)**: For image processing and annotation.
 - **Roboflow**: For dataset management and annotation.
+- **Pandas**: For data processing.
+- **Plotly**: For data visualization.
+- **AlphaVantage**: For real-time data source.
 
-## Successor Note 
-We’re excited to announce that **Version 2** of this project is currently in development! While we can’t reveal all the details just yet, here’s a sneak peek at what’s coming:
-- **Real-Time Market Insights**: Version 2 will take GAP pattern detection to the next level by integrating live market data. Imagine detecting GAP patterns as they form, in real-time!
-- **Enhanced User Experience**: A more dynamic and interactive interface that adapts to real-time changes in the market.
-- **Advanced Analytics**: New features to help you gain deeper insights into market trends and patterns.
+## Features
+### v1
+- Static image upload and analysis
+- GAP UP and GAP DOWN pattern detection
+- Annotation of detected patterns
+- Pattern count statistics
+
+### v2 (**Current**)
+- Real-time market data integration via Alpha Vantage
+- Dynamic candlestick chart generation
+- High-resolution 1-minute candle analysis
+- Streamlined user interface
+- Comprehensive error handling
+- Improved processing pipeline
 
 Stay tuned for updates as we work on bringing these exciting new features to life. _The future of GAP pattern detection is just around the corner!_
 
