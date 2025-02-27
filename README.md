@@ -9,7 +9,7 @@
 -->
 
 
-<p align="center">
+<p align="center" id="demo">
 <a href="https://universe.roboflow.com/cipherunhsiv/gap-pattern-detection">
     <img src="https://app.roboflow.com/images/download-dataset-badge.svg"></img>
 </a>
@@ -148,13 +148,13 @@ The dataset includes:
 - **AlphaVantage**: For real-time data source.
 
 ## Features
-### v1
+### [v1](https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection)
 - Static image upload and analysis
 - GAP UP and GAP DOWN pattern detection
 - Annotation of detected patterns
 - Pattern count statistics
 
-### v2 (**Current**)
+### [v2](https://huggingface.co/spaces/cipherunhsiv/gap-pattern-detection-v2.0) (**Current**)
 - Real-time market data integration via Alpha Vantage
 - Dynamic candlestick chart generation
 - High-resolution 1-minute candle analysis
